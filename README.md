@@ -2,6 +2,8 @@
 
 This project corrects systematic wind forecast bias by learning a mapping from Open-Meteo historical forecast data to ERA5 historical weather reanalysis (ground truth). 
 
+This blog post explains the basic approach of this project: https://medium.com/@prathik.codes/correcting-bias-of-a-wind-forecast-model-9ee14a6d8886
+
 We choose 10 locations across multiple terrains (in order to maximize the ), conduct feature engineering, a train/test split across 2025, train a correction model, and evaluate on test set (nov+dec). 
 
 We build baseline models using Ridge and Lasso linear regression models. We compare with LightGBM model. Tree-based ensemble model is a good choice because of the fact that they tend to work well for such varied feature sets and this volume of data as well as the fact that they can capture non-linear interactions better than standard OLS regression. 
