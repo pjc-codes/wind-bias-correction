@@ -100,10 +100,8 @@ We need more granular terrain data to capture the terrain effects better.
 ## How to Improve The Model 
 
 - Use multiyear data to train the model. At the moment we are only using a single calendar year.
-- Perform hyperparameter tuning to extract maximum generalization from the LightGBM correction model.
 - Add lagged features (t-1, t-3, t-6 hours) and rolling means. 
 - Use higher-resolution terrain descriptor-labels instead of the broad category we have now.
 - Add more comparitive analysis of terrain, season etc.
 - Conduct feature importance analysis for better model interpretability/explainability.
 - Try different models per terrain and see if that leads to better bias correction.
-
